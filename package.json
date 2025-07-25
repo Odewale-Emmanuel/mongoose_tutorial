@@ -1,0 +1,29 @@
+{
+  "name": "mongoose_tutorial",
+  "version": "1.0.0",
+  "description": "This is a test Repo for practicing (learning) mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odewale-Emmanuel/mongoose_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Odewale-Emmanuel/mongoose_tutorial/issues"
+  },
+  "homepage": "https://github.com/Odewale-Emmanuel/mongoose_tutorial#readme",
+  "dependencies": {
+    "mongoose": "^8.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
