@@ -7,9 +7,27 @@ const addressSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
   name: String,
-  age: Number,
-  createdAt: Date,
-  updatedAt: Date,
+  age: {
+    type: Number,
+    min: 13,
+    max: 150,
+  },
+  email: {
+    type: String,
+    maxLength: 250,
+    required: true,
+    lowercase: true,
+    unique: true,
+  },
+  createdAt: {
+    type: Date,
+    immutable: true,
+    default: () => new Date(),
+  },
+  updatedAt: {
+    type: Date,
+    default: () => new Date(),
+  },
   bestFriend: mongoose.SchemaTypes.ObjectId,
   hobbies: [String],
   address: addressSchema,

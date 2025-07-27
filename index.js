@@ -5,8 +5,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/test");
 
 async function main() {
   try {
-    const user = await User.find();
-    console.log(user);
+    const users = await User.find();
+    console.log(users);
   } catch (e) {
     console.log(e.message);
   }
